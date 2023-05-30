@@ -1,9 +1,209 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+    <meta charset="UTF-8">
+    <title>TR256</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:visited {
+            color: inherit;
+        }
+
+        html,
+        body,
+        .container {
+            background: linear-gradient(to left, #8f94fb, #4e54c8);
+            height: 100%;
+            width: 100%;
+        }
+
+        body::-webkit-scrollbar,
+        .container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container {
+            scroll-behavior: smooth;
+            overflow: auto;
+        }
+
+        .row {
+            height: 100%;
+            width: 100%;
+            padding: 50px;
+            box-shadow: 1px 1px 10px rgba(107, 110, 166, 0.5);
+        }
+
+        .section {
+            height: 100%;
+            width: 100%;
+            padding: 50px;
+            position: relative;
+        }
+
+        .section1 {
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .section1 .mask {
+            width: 100%;
+            height: 100%;
+            filter: blur(10px);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(to left, #4e54c8, #8f94fb);
+            opacity: 0.5;
+            border-radius: 20px;
+            z-index: 0;
+        }
+
+        .content1 {
+            height: 100%;
+            width: 100%;
+            z-index: 999;
+        }
+
+        .content1 .left {
+            float: left;
+            width: 40%;
+            height: 100%;
+            position: relative;
+        }
+
+
+        .content1 .left .content-left-box {
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            right: 0;
+            top: calc(50% - 150px);
+        }
+
+        .content1 .left .content-left-box .image-box {
+            background-color: #8f94fb;
+            height: 160px;
+            width: 160px;
+            margin: 0 70px;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .content1 .left .content-left-box .name {
+            height: 140px;
+            width: 300px;
+            color: #FFFFFF;
+            line-height: 140px;
+            font-size: 50px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        .content1 .left .content-left-box .image-box img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .content1 .right {
+            float: right;
+            width: 60%;
+            height: 100%;
+            position: relative;
+        }
+
+        .content1 .right .welcome {
+            height: 100px;
+            width: 510px;
+            text-align: left;
+            line-height: 100px;
+            position: absolute;
+            left: 0;
+            top: calc(50% - 50px);
+            font-size: 70px;
+            padding-left: 40px;
+            letter-spacing: 5px;
+            color: #FFFFFF;
+            border-bottom: 1px solid #FFFFFF;
+        }
+
+        .content2 {
+            height: 100%;
+            width: 100%;
+        }
+
+        .content2 .card {
+            width: 25%;
+            height: 100%;
+            margin: auto;
+            padding: 0 20px;
+            float: left;
+        }
+
+        .content2 .card .panel {
+            width: 100%;
+            height: 100%;
+            border: 2px solid rgba(255, 255, 255, .1);
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body>
-ok
+<div class="container">
+    <div class="row">
+        <div class="section section1">
+            <div class="mask"></div>
+            <div class="content1">
+                <div class="left">
+                    <div class="content-left-box">
+                        <div class="image-box">
+                            <img src="https://pic2.zhimg.com/v2-d1fa48a3818cc4be3b19359a5956b1e4_r.jpg">
+                        </div>
+                        <div class="name">TR256</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="welcome">
+                        WELCOME!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="section section2">
+            <div class="content2">
+                <div class="card">
+                    <div class="panel panel1"></div>
+                </div>
+                <div class="card">
+                    <div class="panel panel1"></div>
+
+                </div>
+                <div class="card">
+                    <div class="panel panel1"></div>
+
+                </div>
+                <div class="card">
+                    <div class="panel panel1"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section3">3</div>
+    <div class="section section4">4</div>
+</div>
 </body>
 </html>
